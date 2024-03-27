@@ -1,0 +1,90 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@signpdf/placeholder-pdf-lib':
+    specifier: ^3.2.4
+    version: 3.2.4(pdf-lib@1.17.1)
+  '@signpdf/signer-p12':
+    specifier: ^3.2.4
+    version: 3.2.4(node-forge@1.3.1)
+  '@signpdf/signpdf':
+    specifier: ^3.2.4
+    version: 3.2.4
+  node-forge:
+    specifier: ^1.3.1
+    version: 1.3.1
+  pdf-lib:
+    specifier: ^1.17.1
+    version: 1.17.1
+
+packages:
+
+  /@pdf-lib/standard-fonts@1.0.0:
+    resolution: {integrity: sha512-hU30BK9IUN/su0Mn9VdlVKsWBS6GyhVfqjwl1FjZN4TxP6cCw0jP2w7V3Hf5uX7M0AZJ16vey9yE0ny7Sa59ZA==}
+    dependencies:
+      pako: 1.0.11
+    dev: false
+
+  /@pdf-lib/upng@1.0.1:
+    resolution: {integrity: sha512-dQK2FUMQtowVP00mtIksrlZhdFXQZPC+taih1q4CvPZ5vqdxR/LKBaFg0oAfzd1GlHZXXSPdQfzQnt+ViGvEIQ==}
+    dependencies:
+      pako: 1.0.11
+    dev: false
+
+  /@signpdf/placeholder-pdf-lib@3.2.4(pdf-lib@1.17.1):
+    resolution: {integrity: sha512-pNYzvLPWiHPir86pDWOK015S0whjNVvItvlTo9kwk1+99l2luIrwmubEvPjxSmDAWQ67UpKxA5lEYQsbZ7Q/og==}
+    engines: {node: '>=12', yarn: '>=1.22.18'}
+    peerDependencies:
+      pdf-lib: ^1.17.1
+    dependencies:
+      '@signpdf/utils': 3.2.4
+      pdf-lib: 1.17.1
+    dev: false
+
+  /@signpdf/signer-p12@3.2.4(node-forge@1.3.1):
+    resolution: {integrity: sha512-DTeYMj1DI30VYmaZXp2zZEg9YwVm3NmqjLF3q6ZxUwlOUSLLOUFkVafIs4YibTAGBmgjWKEMfmNCndK2ACLlzQ==}
+    engines: {node: '>=12', yarn: '>=1.22.18'}
+    peerDependencies:
+      node-forge: ^1.2.1
+    dependencies:
+      '@signpdf/utils': 3.2.4
+      node-forge: 1.3.1
+    dev: false
+
+  /@signpdf/signpdf@3.2.4:
+    resolution: {integrity: sha512-X/LlvUNjw2V6fsHej42LZ/DouyEXHcm4S4se53CAiUE+CDUlPrHlKIZOkGuzwl8SKuhFFFusIAs/75ZEN+5pQw==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@signpdf/utils': 3.2.4
+    dev: false
+
+  /@signpdf/utils@3.2.4:
+    resolution: {integrity: sha512-6e7OZugRY6obyTbAKdj6yCIywCJqN0FDywsIrhkRnOTAKm4J3WVXq18NjzmE6iEXLknxok9EXNW/eVvY9Vp1gg==}
+    engines: {node: '>=12', yarn: '>=1.22.18'}
+    dev: false
+
+  /node-forge@1.3.1:
+    resolution: {integrity: sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==}
+    engines: {node: '>= 6.13.0'}
+    dev: false
+
+  /pako@1.0.11:
+    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
+    dev: false
+
+  /pdf-lib@1.17.1:
+    resolution: {integrity: sha512-V/mpyJAoTsN4cnP31vc0wfNA1+p20evqqnap0KLoRUN0Yk/p3wN52DOEsL4oBFcLdb76hlpKPtzJIgo67j/XLw==}
+    dependencies:
+      '@pdf-lib/standard-fonts': 1.0.0
+      '@pdf-lib/upng': 1.0.1
+      pako: 1.0.11
+      tslib: 1.14.1
+    dev: false
+
+  /tslib@1.14.1:
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: false
